@@ -1,0 +1,90 @@
+Pratica 1 - tarefa em dupla
+
+Antonio Marcelo Brito Barbosa
+
+Dionisio Samuel Dos Santos Leão
+
+
+
+1-  public static void main(String[] args) {
+        for ( int i=1; i<= 5; i++){
+            System.out.println(i);
+        }
+    }
+
+2- public static void main(String[] args) {
+           int contador=0;
+           while (contador <=5){
+               System.out.println( contador);
+               contador++;
+           } 
+
+3-public static void main(String[] args) {
+           int contador=1;
+           do{
+               System.out.println(contador);
+               contador++;
+           }while (contador<=5);
+
+4-public static void main(String[] args) {
+          for (int i=0; i<=15;i++){
+              if (i % 2==0){
+              System.out.println(i);
+          }
+    
+5- public static void main(String[] args) {
+           int contador=0;
+           int soma=0;
+           while (contador <=10){
+               System.out.println(soma);
+               contador++;
+               soma=soma+contador;
+           } 
+          }
+
+6- public static void main(String[] args) {
+           int contador=0;
+           float soma=0;
+           int aux=0;
+           while (contador <=100){
+               if(contador % 2==1){ 
+                   soma=soma+contador;
+                   aux++;
+                   System.out.println((float)(soma/aux));
+               }
+            contador++;
+           }
+7-String nome = JOptionPane.showInputDialog("Insira seu nome");
+        
+        if ((nome==null)||(nome.equals(""))){
+            System.out.println("Comando Invalido!");
+        
+    }else{
+     
+       System.out.println(nome);
+       StringBuilder nm= new StringBuilder();
+       nm.append("Bom dia! ");
+       nm.append(nome);
+       JOptionPane.showMessageDialog(null,nm.toString());
+    }
+}
+
+/** QUESTÃO 8*/  
+      
+      /**String n1= JOptionPane.showInputDialog("Insira um número");
+      int numero=Integer.parseInt(n1);
+      if ( numero % 2==1){
+           StringBuilder nm= new StringBuilder();
+           nm.append("Ímpar: ");
+           nm.append(numero);
+           JOptionPane.showMessageDialog(null,nm.toString());
+      }else{
+       StringBuilder nm= new StringBuilder();
+       nm.append("Par: ");
+       nm.append(numero);
+       JOptionPane.showMessageDialog(null,nm.toString());
+      }
+}
+}
+
+        

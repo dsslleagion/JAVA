@@ -1,0 +1,171 @@
+Pratica 3
+
+Daniela dos Santos Meirelles
+Dionísio Samuel dos Santos Leão	
+
+Ex 1	
+public static void main(String[] args) {
+    Scanner ler = new Scanner(System.in);
+    
+    int x = 10;
+    int vetor[] = new int[x];
+    int i;
+
+    for (i = 0; i < x; i++) {
+        System.out.printf("informe %dº valor de %d: ", (i + 1), x);
+        vetor[i] = ler.nextInt();
+        }
+    for (i = 0; i < x; i++) {
+        System.out.print(vetor[i] + " ");
+    }
+  }
+
+Ex 2
+public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+
+        int x = 10;
+        int vetor[] = new int[x];
+        int i;
+
+        for (i = 0; i < x; i++) {
+            System.out.printf("Informe %dº valor de %d: ", (i + 1), x);
+            vetor[i] = ler.nextInt();
+        }
+        for (i = 0; i < x; i++) {
+            if (vetor[i] >= 20) {
+                System.out.println(vetor[i]);
+            }
+	}
+  }
+
+Ex 3
+public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+
+        int x = 10;
+        int vetor[] = new int[x];
+        int pares[] = new int[x];
+        int i;
+        int nums = 0;
+        int maior = Integer.MIN_VALUE;
+        float media = 0;
+        
+        for (i = 0; i < x; i++) {
+            System.out.printf("Informe %dº valor de %d: ", (i + 1), x);
+            vetor[i] = ler.nextInt();  
+        }       
+       
+        for (i=0; i < x; i++){
+            if (vetor[i] %2 == 0) {
+                pares[i] = vetor[i];
+                nums = nums + 1;
+            }
+        }
+        
+        for (i=0; i < x; i++){
+            if (pares[i] > maior) {
+                maior = pares[i];
+            }
+        }
+               
+        for (i=0; i < x; i++){
+            media = media + pares[i];            
+        }
+        
+        System.out.printf("Numeros pares: " + nums);
+        System.out.println();
+        System.out.printf("Maior número: " + maior);
+        System.out.println();
+        media = media / nums;
+        System.out.printf("A média do vetor é: %.1f", media);        
+    }
+        
+    
+Ex 4
+ public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+
+        int x = 4;
+        int vetor[] = new int[x];
+        int i;
+
+        for (i = 0; i < x; i++) {
+            System.out.printf("informe %dº valor de %d: ", (i + 1), x);
+            vetor[i] = ler.nextInt();
+        }
+
+        for (i = vetor.length - 1; i >= 0; i--) {
+            System.out.print(vetor[i] + " ");
+        }}
+ 
+Ex 5	
+public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+
+        int x = 8;
+        int vetor[] = new int[x];
+        int i;
+        
+        for (i = 0; i < x; i++) {
+            System.out.printf("Digite um número: ");
+            vetor[i] = ler.nextInt();
+        }
+       
+        for (i = 4; i < x; i++){
+            System.out.print(vetor[i] + " ");
+        }
+        
+        for (i = 0; i < 4; i++){
+            System.out.print(vetor[i] + " ");
+        }}
+
+Ex 6
+public static void main(String[] args) {
+        int vetor[] = {2, 5, 4, 54, 43, 22, 5, 9, 30, 15};
+        int i;
+        int numero;
+
+        String numstring = JOptionPane.showInputDialog("Insira um numero: ");
+        numero = Integer.parseInt(numstring);
+
+        for (i = 0; i < vetor.length; i++) {
+            if (numero == vetor[i]) {
+                System.out.printf("o numero foi encontrado na posição %d do vetor \n", i);
+
+            } else {
+                System.out.printf("o numero digitado não contém na posição %d do vetor \n", i);
+            }}}
+
+Ex 7
+ public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        int a[] = {1,2,4,6,21,0,0,0};
+        int b[] = {2,3,6,7,9,11,15,20};
+        int comum [] = new int [5];
+        int i,j;
+ 
+        for (i = 0; i < a.length; i++){
+            for(j=0; j<b.length;j++){
+                if (a[j]==b[i]){
+                    comum[i] = b[i];
+                }}}
+                
+        for (i=0;i<5;i++){
+            if (comum[i] != 0){
+                System.out.print(comum[i] + " ");
+            }}}
+
+
+Ex 8
+public static void main(String[] args) {
+
+        int n[] = {1,1,1,1,1,1,1,1,1,1};
+        int m[] = {1,2,3,4,5,6,7,8,9,10};
+        int produto = 0;
+        
+        for (int i = 0; i<n.length; i++){
+            produto = (n[i]*m[i]) + produto;
+        }
+        System.out.print("O produto escalar de m por n é: " + produto + " ");
+}
